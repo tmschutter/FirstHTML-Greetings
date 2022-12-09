@@ -1,0 +1,13 @@
+
+body { 
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    background-image: url('bg.png');
+}
+
+#output {
+    font-size: 50px;
+    padding: 300px 0;
+    color: rgb(128, 255, 134);
+}

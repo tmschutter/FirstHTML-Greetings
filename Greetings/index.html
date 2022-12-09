@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greetings</title>
+    <link rel="stylesheet" href="assets/main.css">
+    <script src="greeting.js"></script>
+</head>
+<body onload="clearFields()">
+    <h1 id="mainHeading">Enter your information for a greeting!</h1>
+    <p>Type your language in all lowercase</p>
+    <p>
+        Language: <input type="text" id="language" value=""><br>
+        Name: <input type="text" id="name" value=""></p>
+    <button id="greetMe" type="button" onclick="greetUser()">Greet me!</button>
+    <p id="output"></p>
+</body>
+</html>
