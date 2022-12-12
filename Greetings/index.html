@@ -8,13 +8,33 @@
     <link rel="stylesheet" href="assets/main.css">
     <script src="greeting.js"></script>
 </head>
+
+
 <body onload="clearFields()">
     <h1 id="mainHeading">Enter your information for a greeting!</h1>
-    <p>Type your language in all lowercase</p>
+    <p>Select "other" to add a new language</p>
+
     <p>
-        Language: <input type="text" id="language" value=""><br>
+        Language: <select id = "langSelect">
+            <option value="other">other</option>
+            <script>
+                for (var key in greetingData){
+                    var opt = document.createElement("option");
+                    opt.setAttribute("value", key);
+                    var nod = document.createTextNode(key);
+                    opt.appendChild(nod);
+                    var langSel = document.getElementById("langSelect")
+                    langSel.add(opt)}
+            </script>
+            </select><br>
+
         Name: <input type="text" id="name" value=""></p>
+
     <button id="greetMe" type="button" onclick="greetUser()">Greet me!</button>
+    <button id="reset" type="button" onclick="clearLocal()">Reset data</button>
+
+
     <p id="output"></p>
+
 </body>
 </html>

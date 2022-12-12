@@ -11,3 +11,13 @@ body {
     padding: 300px 0;
     color: rgb(128, 255, 134);
 }
+
+#greetMe {
+    width: 140px;
+}
+
+#reset {
+    color: rgb(255, 255, 255);
+    background-color: rgb(156, 0, 0);
+    border-color: red;
+}
